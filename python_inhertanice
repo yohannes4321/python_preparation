@@ -1,0 +1,27 @@
+# Define a class for animal
+class Animal(object):
+    # Initialize the attributes of the animal
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    # Display the information of the animal
+    def display(self):
+        print(f"Animal is a motile living thing \\n Name: {self.name} \\n Age: {self.age} ")
+
+    def hi(self):
+        print("j")
+class Cat(Animal):
+    def __init__(self, name, age, color, meat):
+        super().__init__(name, age)
+        self.color = color
+        self.meat = meat
+
+    def hi(self):
+        print("mywee")
+
+
+u = Cat("hi", 2, "white", "red")
+u.display()
+u.hi()
+
